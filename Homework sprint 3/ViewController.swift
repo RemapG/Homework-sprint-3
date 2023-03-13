@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     
     var x = 0
     func publicTime() -> String {
-        var date = Date()
-        var calendar = Calendar.autoupdatingCurrent
-        var hours = calendar.component(.hour, from: date)
-        var minets = calendar.component(.minute, from: date)
-        var seconds = calendar.component(.second, from: date)
-        var time = "\(hours):\(minets):\(seconds)"
+        let date = Date()
+        let calendar = Calendar.autoupdatingCurrent
+        let hours = calendar.component(.hour, from: date)
+        let minets = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        let time = "\(hours):\(minets):\(seconds)"
         return time
     }
     
@@ -33,8 +33,6 @@ class ViewController: UIViewController {
         counterLabel.text = "Значение счётчика: \(x)"
         plusButton.backgroundColor = .red
         minusButton.backgroundColor = .blue
-        historyTextLable.
-        
         
     }
     
@@ -44,6 +42,7 @@ class ViewController: UIViewController {
         print(x)
         counterLabel.text = "Значение счётчика: \(x)"
         historyTextLable.insertText("\n \(publicTime()): значение изменено на +1")
+       
         
     }
     
