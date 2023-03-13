@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         counterLabel.text = "Значение счётчика: \(x)"
         plusButton.backgroundColor = .red
         minusButton.backgroundColor = .blue
-        
+        historyTextLable.isEditable = false
+        historyTextLable.insertText("История изменений:")
     }
     
 
